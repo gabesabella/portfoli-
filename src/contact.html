@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-background text-about">
+    <!-- Mobile Nav -->
+    <div
+      class="mobile-nav h-screen w-screen flex flex-col place-items-center bg-blue-500 -translate-y-[100vh] absolute z-50 justify-evenly uppercase"
+    >
+      <div class="flex flex-col space-y-[70px]">
+        <a href="./about.html" class="text-5xl">ABOUT</a>
+        <a href="#" class="text-5xl">WORK</a>
+      </div>
+      <div class="flex text-4xl space-x-[50px]">
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#"> <i class="fa-solid fa-file"></i> </a>
+      </div>
+      <a href="./contact.html" class="text-xl">Get in touch</a>
+    </div>
+
+    <nav class="flex w-full main-nav">
+      <!-- Logo -->
+      <div id="nav-logo-section" class="nav-section">
+        <a href="./index.html">
+          <i class="relative z-50 text-3xl fa-solid fa-dumpster-fire"></i>
+        </a>
+      </div>
+
+      <!-- About and Work links -->
+      <div id="nav-link-section" class="hidden lg:nav-section">
+        <div class="flex justify-center w-full space-x-24">
+          <a href="./about.html">ABOUT</a>
+          <a href="#">WORK</a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div id="nav-social-section" class="nav-section">
+        <div class="flex justify-center w-full space-x-10 text-2xl">
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#"> <i class="fa-solid fa-file"></i> </a>
+        </div>
+      </div>
+
+      <!-- Menu and hamburger -->
+      <div
+        id="mobile-nav-cell"
+        class="py-[3rem] px-[2rem] flex gap-1 items-center cursor-pointer lg:hidden z-50 border-l border-border"
+      >
+        <div
+          class="z-50 h-5 space-y-2 cursor-pointer hamburger center w-7 lg:hidden"
+        >
+          <div class="bar smooth" id="bar1"></div>
+          <div class="bar smooth" id="bar2"></div>
+          <div class="bar smooth" id="bar3"></div>
+        </div>
+      </div>
+
+      <!-- Contact Session -->
+      <div
+        id="nav-contact-section"
+        class="hidden lg:nav-section lg:border-l lg:border-border"
+      >
+        <a href="./contact.html" class="">GET IN TOUCH</a>
+      </div>
+    </nav>
+
+    <p class="text-medium">Let's build your next project together</p>
+    <form>
+      <div class="flex flex-col space-y-5 max-w-[500px]">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your name" />
+        <label for="message">message</label>
+        <textarea
+          type="text"
+          id="message"
+          placeholder="Enter your message"
+        ></textarea>
+        <button class="bg-red-500 rounded-lg">Submit</button>
+      </div>
+    </form>
+
+    <script src="./test.js"></script>
+  </body>
+</html>

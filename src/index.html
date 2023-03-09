@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="flex flex-col h-screen overflow-hidden bg-background text-gray1">
+    <!-- Mobile Nav -->
+    <div class="mobile-nav h-screen w-screen flex flex-col place-items-center bg-blue-500 -translate-y-[100vh] absolute z-50 justify-evenly uppercase">
+      <div class="flex flex-col space-y-[70px]">
+        <a href="./about.html" class='text-5xl'>ABOUT</a>
+        <a href="#" class='text-5xl'>WORK</a>
+
+      </div>
+      <div class="flex text-4xl space-x-[50px]">
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#"> <i class="fa-solid fa-file"></i> </a>
+      </div>
+      <a href="./contact.html" class='text-xl'>Get in touch</a>
+    </div>
+    <nav class="flex w-full main-nav" >
+      <!-- Logo -->
+      <div id="nav-logo-section" class="nav-section">
+        <a href="./index.html">
+          <i class="relative z-50 text-3xl fa-solid fa-dumpster-fire"></i>
+        </a>
+      </div>
+
+      <!-- About and Work links -->
+      <div id="nav-link-section" class="hidden lg:nav-section">
+        <div class="flex justify-center w-full space-x-24">
+          <a href="./about.html">ABOUT</a>
+          <a href="#">WORK</a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div id="nav-social-section" class="nav-section">
+        <div class="flex justify-center w-full space-x-10 text-2xl">
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#"> <i class="fa-solid fa-file"></i> </a>
+        </div>
+      </div>
+
+      
+
+      <!-- Menu and hamburger -->
+      <div id="mobile-nav-cell" class="py-[3rem] px-[2rem] flex gap-1 items-center cursor-pointer lg:hidden z-50 border-l border-border">
+
+          <div
+          class="z-50 h-5 space-y-2 cursor-pointer hamburger center w-7 lg:hidden"
+        >
+          <div class="bar smooth" id="bar1"></div>
+          <div class="bar smooth" id="bar2"></div>
+          <div class="bar smooth" id="bar3"></div>
+
+        </div>
+      </div>
+
+
+
+      <!-- Contact Session -->
+      <div id="nav-contact-section" class="hidden lg:nav-section lg:border-l lg:border-border">
+        <a href="./contact.html" class=''>GET IN TOUCH</a>
+      </div>
+    </nav>
+
+    <!-- Main Grid Container -->
+    <main class='overflow-auto smoothy'>
+      <!-- Mushroom Classifier -->
+      <article 
+      data-index="0" data-status="active" class='absolute z-0'>
+
+        <div
+          class="inline-block article-image-section article-section min-h-[150px]"
+          style="background-image: url('assets/img/mushrooms.jpg')"
+        ></div>
+
+        <div class="article-description-section article-section">
+          <p>
+            Let all these little things happen. Don't fight them. Learn to use
+            them. Maybe there was an old trapper that lived out here and maybe
+            one day he went to check his beaver traps, and maybe he fell into
+            the river and drowned. Let's build an almighty mountain. There we
+            are.
+          </p>
+        </div>
+        <a href="https://c964.pythonanywhere.com/" class="flex article-title-section article-section lighten">
+          <div class="flex flex-col place-content-center lg:w-full lg:max-w-full lg:lg:px-24 max-w-24">
+            <h2>MUSHROOM</h2>
+            <h2>CLASSIFIER</h2>
+          </div >
+          <div class="flex justify-end place-items-center lg:px-16">
+            <i class="fa-solid fa-plus text-[50px]"></i>
+          </div>
+        </a>
+        <div class="article-nav-section article-section text-[50px] flex">
+          <div class="article-nav-section-half article-nav-section-half-left lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="article-nav-section-half article-nav-section-half-right lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Poster -->
+      <article 
+      data-index="1" data-status="inactive" class='absolute z-0'>
+
+        <div
+          class="inline-block article-image-section article-section"
+          style="background-image: url('assets/img/poster.avif')"
+        ></div>
+
+        <div class="article-description-section article-section">
+          <p>
+            Let all these little things happen. Don't fight them. Learn to use
+            them. Maybe there was an old trapper that lived out here and maybe
+            one day he went to check his beaver traps, and maybe he fell into
+            the river and drowned. Let's build an almighty mountain. There we
+            are.
+          </p>
+        </div>
+        <a href="https://poster-5wxj.vercel.app/" class="flex article-title-section article-section lighten">
+          <div class="flex flex-col place-content-center lg:w-full lg:max-w-full lg:lg:px-24 max-w-24">
+            <h2>SOCIAL</h2>
+            <h2>APPLICATION</h2>
+          </div >
+          <div class="flex justify-end place-items-center lg:px-16">
+            <i class="fa-solid fa-plus text-[50px]"></i>
+          </div>
+        </a>
+        <div class="article-nav-section article-section text-[50px] flex">
+          <div class="article-nav-section-half article-nav-section-half-left lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="article-nav-section-half article-nav-section-half-right lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Scheduling Solutions -->
+      <article data-index="2" data-status="inactive">
+        <div class="article-image-section article-section"
+        style="background-image: url('assets/img/ss-lg.jpg')"></div>
+        <div class="article-description-section article-section">
+          <p>
+            How to paint. That's easy. What to paint. That's much harder. I
+            really recommend you use odorless thinner or your spouse is gonna
+            run you right out into the yard and you'll be working by yourself.
+            Look around, look at what we have. Beauty is everywhere, you only
+            have to look to see it.
+          </p>
+        </div>
+        <a href="https://github.com/gabesabella/C195"
+          class="flex article-title-section article-section lighten"
+          
+  
+        >
+          <div class="flex flex-col w-full lg:px-24 place-content-center">
+            <h2>CLIENT</h2>
+            <h2>MANAGEMENT</h2>
+          </div>
+          <div class="flex justify-end px-10 place-items-center">
+            <i class="fa-solid fa-plus text-[50px]"></i>
+          </div>
+        </a>
+        <div class="article-nav-section article-section text-[50px] flex">
+          <div class="article-nav-section-half article-nav-section-half-left lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="article-nav-section-half article-nav-section-half-right lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Musician's Personal Website -->
+      <article data-index="3" data-status="inactive">
+        <div class="article-image-section article-section"
+        style="background-image: url('assets/img/hs-lg.jpg')""></div>
+        <div class="article-description-section article-section">
+          <p>
+            Sometimes you learn more from your mistakes than you do from your
+            masterpieces. Let's do that again. All you need to paint is a few
+            tools, a little instruction, and a vision in your mind. A little
+            happy sunlight shining through there. 
+          </p>
+        </div>
+        <a class='flex article-title-section article-section lighten' href="https://www.hayleysabella.com/">
+
+            <div class="flex flex-col w-full lg:px-24 place-content-center">
+              <h2>ARTIST</h2>
+              <h2>HOMEPAGE</h2>
+            </div>
+            <div class="flex justify-end px-10 place-items-center">
+              <i class="fa-solid fa-plus text-[50px]"></i>
+            </div>
+
+          
+        </a>
+        <div class="article-nav-section article-section text-[50px] flex">
+          <div class="article-nav-section-half article-nav-section-half-left lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="article-nav-section-half article-nav-section-half-right lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Activity Generator -->
+      <article data-index="4" data-status="inactive">
+
+          
+          <div class="cursor-pointer article-image-section article-section smooth"
+          style="background-image: url('assets/img/bored.png')"">
+        </div>
+    
+        <div class="article-description-section article-section">
+          <p>
+            This is a react application that suggests a random activity utilizing the <a class='underline text-gray4' href="https://www.boredapi.com/">Bored API</a>. The activity can be narrowed based on category (cooking, music, etc.) and number of participants.
+            The purpose of building this app was to practice using TypeScript and React. I also wanted to gain experience with Next.JS and Vercel.  
+          </p>
+        </div>
+        <a class='flex article-title-section article-section lighten' href="https://bored-api-app.vercel.app/">
+
+          <div class="flex flex-col w-full uppercase lg:px-24 place-content-center">
+            <h2>activity</h2>
+            <h2>generator</h2>
+          </div>
+          <div class="flex justify-end px-10 place-items-center">
+            <i class="fa-solid fa-plus text-[50px]"></i>
+          </div>
+
+
+      </a>
+        <div class="article-nav-section article-section text-[50px] flex">
+          <div class="article-nav-section-half article-nav-section-half-left lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleLeftClick()"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="article-nav-section-half article-nav-section-half-right lighten">
+            <button
+              class="article-nav-button"
+              type="button"
+              onclick="handleRightClick()"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="./test.js"></script>
+  </body>
+</html>

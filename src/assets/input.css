@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "utilities/colors.css";
+@import "tailwindcss/components";
+@import "components/nav.css";
+@import "components/work.css";
+@import "tailwindcss/utilities";
+@import "utilities/text.css";
+@import "utilities/hover-effects.css";
+
+@import "fonts/serif/slab.css";
+
+@layer base {
+  :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}

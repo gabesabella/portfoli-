@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="pb-10 lg:max-h-screen bg-background text-about">
+    <!-- Mobile Nav -->
+    <div
+      class="mobile-nav h-screen w-screen flex flex-col place-items-center bg-blue-500 -translate-y-[100vh] absolute z-50 justify-evenly uppercase"
+    >
+      <div class="flex flex-col space-y-[70px]">
+        <a href="./about.html" class="text-5xl">ABOUT</a>
+        <a href="./index.html" class="text-5xl">WORK</a>
+      </div>
+      <div class="flex text-4xl space-x-[50px]">
+        <a href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#"> <i class="fa-solid fa-file"></i> </a>
+      </div>
+      <a href="./contact.html" class="text-xl">Get in touch</a>
+    </div>
+
+    <nav class="flex w-full main-nav">
+      <!-- Logo -->
+      <div id="nav-logo-section" class="nav-section">
+        <a href="./index.html">
+          <i class="relative z-50 text-3xl fa-solid fa-dumpster-fire"></i>
+        </a>
+      </div>
+
+      <!-- About and Work links -->
+      <div id="nav-link-section" class="hidden lg:nav-section">
+        <div class="flex justify-center w-full space-x-24">
+          <a href="./about.html">ABOUT</a>
+          <a href="./index.html">WORK</a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div id="nav-social-section" class="nav-section">
+        <div class="flex justify-center w-full space-x-10 text-2xl">
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#"> <i class="fa-solid fa-file"></i> </a>
+        </div>
+      </div>
+
+      <!-- Menu and hamburger -->
+      <div
+        id="mobile-nav-cell"
+        class="py-[3rem] px-[2rem] flex gap-1 items-center cursor-pointer lg:hidden z-50 border-l border-border"
+      >
+        <div
+          class="z-50 h-5 space-y-2 cursor-pointer hamburger center w-7 lg:hidden"
+        >
+          <div class="bar smooth" id="bar1"></div>
+          <div class="bar smooth" id="bar2"></div>
+          <div class="bar smooth" id="bar3"></div>
+        </div>
+      </div>
+
+      <!-- Contact Session -->
+      <div
+        id="nav-contact-section"
+        class="hidden lg:nav-section lg:border-l lg:border-border"
+      >
+        <a href="./contact.html" class="">GET IN TOUCH</a>
+      </div>
+    </nav>
+
+    <div class="flex flex-wrap justify-center w-full my-12 md:flex-nowrap">
+        
+        <!-- Image -->
+        <div class="flex justify-center md:order-2">
+          <div
+            class="flex justify-center place-items-center w-[350px] h-[350px] lg:w-[600px] lg:h-[600px] border rounded-full border-gray7"
+          >
+            <div
+              class="flex justify-center place-items-center w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] border rounded-full border-gray7 opacity-90"
+            >
+              <div
+                id="oi"
+                class="rounded-full w-[250px] lg:bg-red-100 lg:w-[300px]"
+              >
+                <img
+                  class="rounded-full"
+                  src="assets/img/professional.png"
+                  alt="profile image for gabe"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center lg:space-y-10 lg:-translate-y-5 lg:p-10 lg:m-5"
+        >
+          <h1>Hi, I'm Gabe</h1>
+          <div class="text-center md:text-left">
+            <h4>Fullstack developer</h4>
+            <h4>With a love for design</h4>
+          </div>
+          <div class="max-w-[500px] md:flex hidden">
+            <p class="text-medium">
+              Web developer and computer science graduate living in Boston, MA. I
+              love making websites that are both functional and beautiful. I strive
+              to create user-friendly designs that positively impact people's lives
+              by solving specific problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About paragraph -->
+    <div
+      class="flex flex-col justify-center w-full px-8 mt-5 place-items-center"
+    >
+      <div class="max-w-[600px]">
+        <p class="flex md:hidden text-medium">
+          Web developer and computer science graduate living in Boston, MA. I
+          love making websites that are both functional and beautiful. I strive
+          to create user-friendly designs that positively impact people's lives
+          by solving specific problems.
+        </p>
+      </div>
+    </div>
+
+    <!-- Favorite Tech -->
+    <!-- <div class="bg-red-200 flex-center">
+      <div class="flex flex-col p-10 bg-blue-500">
+        <h3>Creative skills and experiences</h3>
+        <p class='text-large'>I've had the opportunity to use many different programming languages and technologies over the past few years. Although I prioritize using the right technologies for the job, my preferred daily tools include:</p>
+        <ul>
+          <li>Tailwind CSS </li>
+          <img class="w-24" src="assets/img/tailwind.svg" alt="tailwind css logo" />
+
+          <li>Typescript</li>
+          <img class="w-24" src="assets/img/ts.svg" alt="Next js logo" />
+          <li>React
+          </li>
+          <i class="fa-brands fa-react"></i>
+          <li>Next JS</li>
+          <img class="w-24" src="assets/img/next.svg" alt="Next js logo" />
+    
+          <li>Prisma</li>
+          <img class="w-24" src="assets/img/prisma.svg" alt="Prisma logo" />
+          
+          <li>PostgreSQL</li>
+          <img class="w-24" src="assets/img/postgresql.svg" alt="postgresql logo" />
+          <li>Vercel</li>
+          <img class="w-24" src="assets/img/vercel.svg" alt="vercel logo" />
+        </ul>
+      </div>
+      <div class="flex bg-green-300 h-96">Typescript</div> -->
+      
+    </div>
+    <script src="./test.js"></script>
+  </body>
+</html>
