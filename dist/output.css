@@ -586,6 +586,9 @@ select {
 }
 
 :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   --gray-10: hsl(215, 19%, 12%);
   --gray-9: hsl(227.14, 15.22%, 18.04%);
   --gray-8: hsl(210, 10.34%, 22.75%);
@@ -644,14 +647,6 @@ select {
   --background-color: hsl(224.2, 61.3%, 6.1%);
   /* matches about picture */
   --about: hsl(42.86, 6.67%, 79.41%);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-:root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 *, ::before, ::after {
@@ -832,6 +827,8 @@ article {
     grid-template-rows: 2fr 1fr;
   }
 }
+
+/* Work carousel */
 
 main {
   position: relative;
@@ -1303,6 +1300,21 @@ article[data-status="becoming-active-from-right"] {
   opacity: 0.9;
 }
 
+.lighten {
+  transition: all 0.2s ease-in-out;
+  background-color: var(--background-color);
+}
+
+/* Lighten background on hover */
+
+.lighten:hover {
+  background-color: var(--background-hover);
+}
+
+.smooth {
+  transition: all 0.4s ease-out;
+}
+
 h1 {
   font-size: 55px;
   font-weight: 600;
@@ -1434,26 +1446,7 @@ h4 {
   .flex-center {
     flex-wrap: nowrap;
   }
-}
 
-.lighten {
-  transition: all 0.2s ease-in-out;
-  background-color: var(--background-color);
-}
-
-/* Lighten background on hover */
-
-.lighten:hover {
-  background-color: var(--background-hover);
-}
-
-.smooth {
-  transition: all 0.4s ease-out;
-}
-
-/* Headings */
-
-@media (min-width: 1024px) {
   nav > .lg\:nav-section {
     padding: 3rem 2rem;
     display: flex;
