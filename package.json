@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gabesabella/portfoli-/issues"
   },
-  "homepage": "https://github.com/gabesabella/portfoli-#readme"
+  "homepage": "https://github.com/gabesabella/portfoli-#readme",
+  "dependencies": {
+    "node": "^18.14.0"
+  }
 }
