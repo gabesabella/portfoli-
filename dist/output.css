@@ -1211,6 +1211,11 @@ article[data-status="becoming-active-from-right"] {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .p-10 {
   padding: 2.5rem;
 }
